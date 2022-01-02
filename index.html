@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- Adapted from CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">D<span>G.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#experiences" class="menu-btn">Experiences</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Daniel Gunawan</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="#about">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Daniel and I'm a <span class="typing-2"></span></div>
+                    <p>Hi! That's my finger, but not my dog. Anyways, I am an undergraduate sophomore studying Information Systems 
+                        at Carnegie Mellon University. I'm passionate about anything that intersects the areas of business and 
+                        technology. I feel that my biggest strength is my diverse skillset and well-roundedness; I've learned more about the development
+                        and improvement of products as a Product Team Intern at Media Nusantara Citra, where I closely shadowed a 
+                        product manager who was in charge of the finance and banking app 'Motionpay'. I've gained programming and 
+                        software development knowledge through my time as a Research Assistant for a High Frequency Proprietary Stock Trader,
+                        where I developed data-extraction and data-manipulation scripts along with a designated GUI. I've developed
+                        data analysis and communication skills in the areas of business as a Business Development Intern for Maju 
+                        Makmur Sempurna, where I analyzed operational data involved in the logistical process and conducted internal
+                        research for a to-be integrated information system. So despite not being sure of what I will do in the future
+                        (technically, noone is!), I am well prepared to face whatever challenge that is bound to appear before me.
+                        <br>
+                        <br>
+                        Aside from that, I enjoy playing sports for fun. I play almost everything, but my favorites as of now are basketball,
+                        volleyball and tennis. I've been playing tennis for about 12 years now, and have competed both on national 
+                        and international levels for juniors. I have a blog which documents my thoughts and perspectives throughout my 
+                        tennis (and life!) journey, which you can access by clicking <a class = "hyperlink" href = "https://tiebreaktalk.weebly.com">here</a>. 
+                        I also make content for fun sometimes, which you can see on my <a class = "hyperlink" href = "https://www.youtube.com/channel/UCw6I_CcppThwRDrby6ACv9A">Youtube</a> 
+                        channel and <a class = "hyperlink" href = "">Tiktok</a> page.
+                    </p>
+                    <a class = "button" href="https://drive.google.com/file/d/1r1ikZg-RpmF1XhrCGo3a0vCLYtIVsiJg/view?usp=sharing">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section start -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="serv-content">
+                <div class="card-wrap-inner">
+                    <div class="card" onclick = "window.location.href='cubewalker.html';">
+                        <div class="box">
+                            <img height = "150" src="images/cubewalkerlogo.png" alt="">
+                            <div class="text">CubeWalker</div>
+                            <p>An endless running game featuring 3D-graphics, simulated physics mechanics and simple AI. Made with Python.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrap-inner">
+                    <div class="card" onclick = "window.location.href='empyrean.html';">
+                        <div class="box">
+                            <img height = "150" src="images/empyreanlogo.png" alt="">
+                            <div class="text">Empyrean</div>
+                            <p>A 3D FPS battle royale game with a steampunk-inspired theme. Made with Unity and C#.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap-inner">    
+                    <div class="card" onclick = "window.location.href='lostandfound.html';">
+                        <div class="box">
+                            <img height = "150" src="images/cmulostandfoundlogo.png" alt="">
+                            <div class="text">CMU Lost And Found</div>
+                            <p>A website that digitizes Carnegie Mellon's Lost and Found system. Made with Javascript and React.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap-inner">    
+                    <div class="card" onclick = "window.location.href='goweather.html';">
+                        <div class="box">
+                            <img height = "150" src="images/goweatherlogo.png" alt="">
+                            <div class="text">GoWeather</div>
+                            <p>An app that conveniently provides the weather news. Made with Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap-inner">   
+                    <div class="card" onclick = "window.location.href='vacancy.html';">
+                        <div class="box">
+                            <img height = "150" src="images/vacancylogo.png" alt="">
+                            <div class="text">Vacancy</div>
+                            <p>A Room Booking System that eases the reservation process. Made with Java and mySQL.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap-inner">   
+                    <div class="card" onclick = "window.location.href='tartanmonopoly.html';">
+                        <div class="box">
+                            <img height = "150" src="images/tartanmonopolylogo.png" alt="">
+                            <div class="text">Tartan Monopoly</div>
+                            <p>Monopoly but with a tartanized twist! Made with Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap-inner">  
+                    <div class="card" onclick = "window.location.href='website.html';">
+                        <div class="box">
+                            <img height = "150" src="images/profilesc.jpg" alt="">
+                            <div class="text">This Website</div>
+                            <p>This website you're browsing through right now! Made with HTML, CSS and JS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap-inner">   
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-code"></i>
+                            <div class="text">Coming Soon...</div>
+                            <p>Nothing here!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- experiences(old) section start -->
+    <!--
+    <section class="experiences" id="experiences">
+        <div class="max-width">
+            <h2 class="title">My experiences</h2>
+            <div class="experiences-content">
+
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- experiences section start -->
+
+    
+    <section class="experiences" id="experiences">
+        <div class="max-width">
+            <h2 class="title">My experiences</h2>
+            <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/scottylabs.png" alt="">
+                            <div class="text">ScottyLabs Member</div>
+                            <p>Part of the <b>CMU Lost and Found</b> Project. Collaborated with others to improve the Lost and Found
+                                website design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/gcs.jpg" alt="">
+                            <div class="text">Game Creation Society Member</div>
+                            <p>Part of the <b>Empyrean</b> Project. Collaborated with a team of programmers and designers to create
+                                a 3D FPS multiplayer.
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/tokconference1.jpg" alt="">
+                            <div class="text">TOK Conference Leader</div>
+                            <p>Conference and Workshop Leader for first-ever TOK Conference in Indonesia, hosted by Beacon Academy.
+                                <br>
+                                <b>Fun fact</b>: The theme was 'This is Not a Conference'
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/tennis1.jpg" alt="">
+                            <div class="text">Tennis Player</div>
+                            <p>Played competitive tennis for 10+ years. At the junior level, I ranked <b>6</b> nationally (in Indonesia), 
+                                and <b>1594</b> internationally. 
+                            I play club tennis at CMU now.
+                            <br>
+                            <b>Fun fact</b>: I've lost my forehand   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/badminton1.jpg" alt="">
+                            <div class="text">House Captain</div>
+                            <p>Leader and Mentor for over 30 students in the Water House. Helped organized and 
+                                coordinate all school and sports-related events.
+                                <br>
+                                <b>Fun fact</b>: It took me months to memorize the chant
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/pempek1.jpg" alt="">
+                            <div class="text">Pempek Funnywati Junior Volunteer</div>
+                            <p>First teenage member of 
+                                <br>
+                                <b>Pempek Funnywati</b>, a local charity organization. 
+                                Taught math & english to kids.
+                                Arranged funding and distribution of food to both              
+                                orphanages and retirement homes.
+                            </p>
+                        </div>
+                    </div>  
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>If you have any questions or want to connect for any reason whatsoever, feel free to reach out!</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Daniel Gunawan</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Pittsburgh, PA</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">dgunawan@andrew.cmu.edu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="https://formsubmit.co/danielfgunawan1@gmail.com" method = "POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By Daniel Gunawan | <span class="far fa-copyright"></span> 2021 All rights reserved.  |  Design: <a href = https://www.codingnepalweb.com>CodingNepal</a></span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
